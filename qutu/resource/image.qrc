@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="shouyexuanze">
+    <file>image/暂停按钮-主界面2.png</file>
+    <file>image/暂停按钮mini.png</file>
+    <file>image/暂停按钮-主界面.png</file>
+    <file>image/background.png</file>
+    <file>image/full.png</file>
+  </qresource>
+</RCC>

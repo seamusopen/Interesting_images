@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>486</width>
+    <height>413</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>352</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>2000</width>
+    <height>2000</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+	
+/*background-image: url(:/shouyexuanze/image/full.png);
+border-image: url(:/shouyexuanze/image/background.png);*/
+	background-color: rgb(38, 38, 38);
+	/*border-style:outset; 
+		border-width:1px;
+		border-color:balck;
+		border-radius:30px;*/
+
+}
+QPushButton{
+font: 40pt &quot;微软雅黑&quot;;
+color:rgb(212, 212, 212);
+        /*border-bottom:1px solid white;*/
+        font-size:20px;
+        font-weight:700;
+        font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+
+		border-style:outset; 
+		border-width:1px;
+		border-color:balck;
+		border-radius:25px;
+
+		
+}
+QPushButton:hover{
+color:rgb(150, 150, 150);
+	background-color: rgb(138, 138, 138);
+	color: rgb(38, 38, 38);
+}
+QMessageBox{
+		background-color: rgb(38, 38, 38);
+		font: 40pt &quot;微软雅黑&quot;;
+		color:rgb(212, 212, 212);
+        /*border-bottom:1px solid white;*/
+        font-size:20px;
+        font-weight:700;
+        font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+
+}</string>
+  </property>
+  <widget class="QPushButton" name="main_menue_btn">
+   <property name="geometry">
+    <rect>
+     <x>-60</x>
+     <y>130</y>
+     <width>121</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 20pt &quot;方正舒体&quot;;
+border:white;
+border:1px solid;
+border-radius:60px;
+	background-color: rgb(50, 11, 51);
+
+padding-right:-45px;
+
+padding-top:-7px;
+
+
+}
+QPushButton:hover{
+
+
+
+background-color: rgb(38, 38, 38);
+background-color:;
+	color: rgb(103, 182, 204);
+font: 31pt;
+color:rgb(212, 212, 212);
+
+
+}
+QPushButton:checked{
+
+	border:4px double;
+
+}</string>
+   </property>
+   <property name="text">
+    <string>菜
+单</string>
+   </property>
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="set_menue_btn">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 15pt &quot;方正舒体&quot;;
+background-color: rgb(50, 11, 51);
+border:white;
+border:1px solid;
+border-radius:20px;
+}
+QPushButton:hover{
+
+border:4px double;
+
+}
+QPushButton:checked{
+
+background-color:rgb(166, 166, 166);
+
+}</string>
+   </property>
+   <property name="text">
+    <string>设置</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="about_menue_btn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>240</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 15pt &quot;方正舒体&quot;;
+background-color: rgb(50, 11, 51);
+border:white;
+border:1px solid;
+border-radius:20px;
+}
+QPushButton:hover{
+
+border:4px double;
+
+}
+QPushButton:checked{
+
+background-color:rgb(166, 166, 166);
+
+}</string>
+   </property>
+   <property name="text">
+    <string>关于</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="example_menue_btn">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>170</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+font: 15pt &quot;方正舒体&quot;;
+background-color: rgb(50, 11, 51);
+border:white;
+border:1px solid;
+border-radius:20px;
+}
+QPushButton:hover{
+
+border:4px double;
+
+}
+QPushButton:checked{
+
+background-color:rgb(166, 166, 166);
+
+}</string>
+   </property>
+   <property name="text">
+    <string>样例</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>30</y>
+     <width>251</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>8</number>
+    </property>
+    <item>
+     <widget class="QPushButton" name="pushButton_5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>马赛克风格图片</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>图片转文字</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>视频转文字</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>趣味二维码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>中英文词云</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>20</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:#6DDF6D;border-radius:5px;
+color: rgb(166, 166, 166);
+font:26px &quot;微软雅黑&quot;;
+font-weight:600;
+padding-top:-4px;
+}
+QPushButton:hover{background:green;}</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>20</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:#F7D674;border-radius:5px;
+color: rgb(166, 166, 166);
+font-weight:bolder;
+padding-top:-5px;
+font: 20px&quot;微软雅黑&quot;;
+}
+QPushButton:hover{background:yellow;}</string>
+   </property>
+   <property name="text">
+    <string>□</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:#F76677;border-radius:5px;
+color: rgb(166, 166, 166);
+font-weight:bolder;
+font:18px;
+font-weight:bolder;
+}
+QPushButton:hover{background:red;}</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <zorder>layoutWidget</zorder>
+  <zorder>set_menue_btn</zorder>
+  <zorder>about_menue_btn</zorder>
+  <zorder>example_menue_btn</zorder>
+  <zorder>main_menue_btn</zorder>
+  <zorder>pushButton_6</zorder>
+  <zorder>pushButton_7</zorder>
+  <zorder>pushButton_8</zorder>
+ </widget>
+ <resources>
+  <include location="../image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>main_menue_btn</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>Form</receiver>
+   <slot>show_hide_menue()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-41</x>
+     <y>143</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>66</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>set_menue_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>set_qt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>68</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>94</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>example_menue_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>example_qt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>190</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>126</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>about_menue_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>about_qt()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>71</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_tu_wen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>281</x>
+     <y>121</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>431</x>
+     <y>113</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_erweima()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>432</x>
+     <y>241</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_ciyun()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>328</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>444</x>
+     <y>307</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_shi_wen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>272</x>
+     <y>179</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>78</x>
+     <y>193</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>show_masai()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>297</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>129</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>xuanze_guanbi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>122</x>
+     <y>37</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>154</x>
+     <y>40</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>xuanze_fangda()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>82</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>132</x>
+     <y>79</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>xuanze_yincang()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>41</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>11</x>
+     <y>47</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>show_hide_menue()</slot>
+  <slot>set_qt()</slot>
+  <slot>example_qt()</slot>
+  <slot>about_qt()</slot>
+  <slot>show_tu_wen()</slot>
+  <slot>show_erweima()</slot>
+  <slot>show_ciyun()</slot>
+  <slot>show_shi_wen()</slot>
+  <slot>show_masai()</slot>
+  <slot>xuanze_guanbi()</slot>
+  <slot>xuanze_fangda()</slot>
+  <slot>xuanze_yincang()</slot>
+ </slots>
+</ui>

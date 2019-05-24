@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>909</width>
+    <height>737</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#Form{
+	
+/*background-image: url(:/shouyexuanze/image/full.png);
+border-image: url(:/shouyexuanze/image/background.png);*/
+	background-color: rgb(38, 38, 38);
+
+}
+QPushButton{
+font: 40pt &quot;微软雅黑&quot;;
+color:rgb(212, 212, 212);
+        /*border-bottom:1px solid white;*/
+        font-size:20px;
+        font-weight:700;
+        font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;
+
+		border-style:outset; 
+		border-width:2px;
+		border-color:balck;
+		border-radius:15px;
+		
+}
+QPushButton:hover{
+color:rgb(150, 150, 150);
+	background-color: rgb(138, 138, 138);
+	color: rgb(38, 38, 38);
+}</string>
+  </property>
+  <widget class="QPushButton" name="yuanzetupian">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>40</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 18pt &quot;方正舒体&quot;;
+border-width:2px;</string>
+   </property>
+   <property name="text">
+    <string>选择视频</string>
+   </property>
+  </widget>
+  <widget class="QTextBrowser" name="dudu">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>90</y>
+     <width>831</width>
+     <height>621</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(160, 160, 160);
+border-radius:30px;
+
+border:2px solid;
+border-color: rgb(127, 188, 248);
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:#F7D674;border-radius:5px;
+color: rgb(166, 166, 166);
+font-weight:bolder;
+padding-top:-5px;
+font: 20px&quot;微软雅黑&quot;;
+border-width:1px;
+}
+QPushButton:hover{background:yellow;}</string>
+   </property>
+   <property name="text">
+    <string>□</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>30</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:#6DDF6D;border-radius:5px;
+color: rgb(166, 166, 166);
+font:26px &quot;微软雅黑&quot;;
+font-weight:600;
+padding-top:-4px;
+border-width:1px;
+}
+QPushButton:hover{background:green;}</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_8">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>21</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background:#F76677;border-radius:5px;
+color: rgb(166, 166, 166);
+font-weight:bolder;
+font:18px;
+font-weight:bolder;
+border-width:1px;
+}
+QPushButton:hover{background:red;}</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../image.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>yuanzetupian</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>shi_wen()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>370</x>
+     <y>61</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>75</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_8</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>guanbi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>132</x>
+     <y>42</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>284</x>
+     <y>33</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_7</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>judahua()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>91</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>231</x>
+     <y>52</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_6</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>zuixiaohua()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>53</x>
+     <y>41</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>32</x>
+     <y>15</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>shi_wen()</slot>
+  <slot>shuchu()</slot>
+  <slot>guanbi()</slot>
+  <slot>judahua()</slot>
+  <slot>zuixiaohua()</slot>
+ </slots>
+</ui>
